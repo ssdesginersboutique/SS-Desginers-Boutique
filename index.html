@@ -15,9 +15,9 @@
             line-height: 1.6;
         }
         header {
-            background-color: #222;
+            background: url('hero-bg.jpg') no-repeat center center/cover;
             color: #fff;
-            padding: 1.5rem 0;
+            padding: 4rem 2rem;
             text-align: center;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
@@ -29,14 +29,15 @@
         }
         header h1 {
             margin: 0;
-            font-size: 2rem;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         }
         nav {
             display: flex;
             justify-content: center;
             gap: 1.5rem;
             padding: 1rem 0;
-            background-color: #f8f8f8;
+            background-color: #fff;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         nav a {
@@ -44,12 +45,14 @@
             color: #555;
             font-weight: bold;
             padding: 0.5rem 1rem;
+            border: 2px solid transparent;
             border-radius: 20px;
-            transition: background-color 0.3s, color 0.3s;
+            transition: all 0.3s;
         }
         nav a:hover {
             background-color: #007bff;
             color: #fff;
+            border-color: #007bff;
         }
         .hero {
             text-align: center;
@@ -72,7 +75,6 @@
             padding: 2.5rem 1rem;
             background-color: #fff;
             text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             margin: 2rem;
             border-radius: 10px;
         }
@@ -84,10 +86,22 @@
         .services ul {
             list-style-type: none;
             padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
         }
         .services ul li {
             margin: 0.5rem 0;
             font-size: 1.2rem;
+            background: #f8f8f8;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .services ul li:hover {
+            transform: translateY(-5px);
         }
         .gallery {
             display: grid;
@@ -111,7 +125,6 @@
             padding: 2.5rem 1rem;
             background-color: #fff;
             text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             margin: 2rem;
             border-radius: 10px;
         }
@@ -131,6 +144,13 @@
         }
         .contact a:hover {
             text-decoration: underline;
+        }
+        .contact i {
+            margin: 0.5rem;
+            transition: transform 0.3s;
+        }
+        .contact i:hover {
+            transform: scale(1.2);
         }
         footer {
             text-align: center;
